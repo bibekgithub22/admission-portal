@@ -17,15 +17,16 @@ body {
   height: 100%;
   background: whitesmoke;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 /* navbar */
 
 nav {
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   width: auto;
   height: 3.5rem;
-  background: rgb(0, 0, 83);
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,15 +65,16 @@ li:hover {
   scale: 0.94;
 }
 input {
-  border-radius: 2rem;
-  padding: 0.4rem 0.4rem;
-  box-shadow: rgba(0, 18, 74, 0.676) 2px 3px 10px 1px;
-  background-color: #0000bfe0;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.4rem;
+  background-color: rgb(211, 211, 211);
   border: none;
-  color: rgb(232, 232, 232);
 }
 ::placeholder {
-  color: rgb(232, 232, 232);
+  color: rgb(1, 1, 1);
+}
+input:focus::placeholder {
+  color: transparent;
 }
 
 /* page1 main content */
@@ -90,29 +92,31 @@ input {
 }
 .cover-txt {
   font-size: 1.5rem;
-  padding-top: 2em;
+  padding-top: 4.5em;
   color: whitesmoke;
   width: 50vw;
   min-height: auto;
 }
 .cover-txt h1 {
-  text-shadow: 3px 5px 10px #0000009a;
+  font-size: 2.8rem;
+  text-shadow: 3px 5px 10px #0000006b;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 .cover-txt p {
-  text-shadow: 3px 5px 10px #0000009a;
-  color: #f1f1f1;
-  letter-spacing: 2;
-  font-weight: bold;
+  text-shadow: 3px 5px 10px #0000006b;
+  color: #ffffff77;
+  letter-spacing: 0;
+  /* font-weight: bold; */
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
 .cover-txt h2 {
   font-size: 2em;
-  color: #5bb5ff;
-  text-shadow: 3px 5px 10px #0000009a;
-  margin-bottom: 5rem;
+  color: #eaff00;
+  text-shadow: 3px 5px 10px #0000006b;
+  margin-bottom: 4rem;
+  letter-spacing: 1;
 }
 .reg-btn-wrap {
   display: flex;
@@ -125,14 +129,31 @@ input {
   padding: 0 2rem;
   border-radius: 1vh;
   font-weight: bold;
+  border: none;
+  font-size: 0.9rem;
 }
 #reg-btn {
   background: #02891f;
   color: whitesmoke;
+  cursor: pointer;
+  transition: 0.2s;
 }
 #info-btn {
   background-color: rgba(0, 0, 0, 0.489);
   color: orange;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#reg-btn:hover {
+  background-color: rgba(245, 245, 245, 0.884);
+  color: #007018;
+  scale: 0.96;
+}
+
+#info-btn:hover {
+  background-color: rgba(255, 145, 0, 0.447);
+  color: #ffffff;
+  scale: 0.96;
 }
 
 /* page2 */
