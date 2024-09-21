@@ -45,6 +45,9 @@ nav {
   cursor: pointer;
   margin-left: 1rem;
 }
+.left img{
+  height: 26px;
+}
 .mid {
   display: flex;
   justify-content: space-around;
@@ -57,6 +60,7 @@ nav {
 #menu {
   display: none;
   cursor: pointer;
+  height: 25px;
 }
 .mid li {
   list-style: none;
@@ -115,7 +119,7 @@ input:focus::placeholder {
 }
 .cover-txt h2 {
   font-size: 2em;
-  color: #dbe610;
+  color: #d8e30c;
   text-shadow: 3px 5px 10px #0000006b;
   margin-bottom: 4rem;
   letter-spacing: 1;
