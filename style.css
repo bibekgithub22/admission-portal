@@ -83,6 +83,37 @@ input:focus::placeholder {
   color: transparent;
 }
 
+/* collapse and expand menu */
+.menuDefault{
+  display: none ;
+}
+
+.menu-expand{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: fit-content;
+  background: #cacaca;
+  padding: 1rem 0rem;
+}
+.menu-expand ul>li{
+  list-style-type: none;
+  padding: 1.2rem 0rem;
+}
+.menu-expand input{
+  display: block;
+  display: flex;
+  justify-content: center;
+  border:solid 1px;
+  border-radius: 21px;
+  text-align: center;
+  background: #f3f3f3;
+}
+.menu-expand ::placeholder{
+  padding-left: 1rem;
+}
+
+
 /* page1 main content */
 
 .hero {
@@ -329,4 +360,8 @@ input:focus::placeholder {
   .center {
     justify-content: center;
   }
+  .menu-expand{
+    display: flex;
+  }
+ 
 }
